@@ -1,0 +1,27 @@
+article{
+    width: 55vw;    
+}
+
+#featuredImageWrapper{
+    display:flex;
+    float:right;
+    margin-left: 250px;
+    margin-right: 3vw;
+    margin-top: 10px;
+    filter:contrast(90%);
+    justify-content: right;
+    max-width: 613px;
+    height: auto;
+    min-width: 400px;
+}
+
+#featuredImageWrapper img{
+    vertical-align: top;
+    width: 400px;
+    height: inherit;
+
+}
+
+#introduction{
+    display:flex;
+}

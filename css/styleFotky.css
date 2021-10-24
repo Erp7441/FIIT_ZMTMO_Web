@@ -1,0 +1,35 @@
+article{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 85vw;
+    height: 70vh;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.controlBtn {
+    width: 20px;
+    margin-top: 15px;
+    filter: invert(100);
+}
+
+.slideImg{
+    position: absolute;
+    top: 10px;
+    width: 500px;
+    left: 550px;
+    transition: 0.5s linear;
+    height: auto;
+}
+
+#photosNextBtn{
+    align-self: center;
+}
+
+#photosPreviousBtn{
+    align-self: center;
+
+}
+
+

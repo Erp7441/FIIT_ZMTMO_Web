@@ -1,0 +1,18 @@
+table{
+    position:relative;
+    left:25vw;
+    width: 50vw;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border: 2px solid var(--secondaryColor);
+}
+
+td{
+    text-align:center;
+}
+
