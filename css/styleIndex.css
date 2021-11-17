@@ -1,8 +1,8 @@
-article{
-    width: 55vw;    
+.articleIndex{ 
+    width: 55vw;   
 }
 
-#featuredImageWrapper{
+.featuredImageWrapper{
     display:flex;
     float:right;
     margin-left: 250px;
@@ -15,13 +15,16 @@ article{
     min-width: 400px;
 }
 
-#featuredImageWrapper img{
+.featuredImage{
     vertical-align: top;
     width: 400px;
     height: inherit;
 
 }
 
-#introduction{
-    display:flex;
+.introduction{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    max-width: 100vw;
 }
