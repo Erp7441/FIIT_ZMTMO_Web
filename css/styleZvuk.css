@@ -1,0 +1,11 @@
+h3, article p{
+    text-align: center;
+    font-style: italic;
+}
+
+.audioWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw;
+}

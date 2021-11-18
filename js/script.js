@@ -16,7 +16,6 @@ const background = document.getElementById('background');
 
 function updateTheme(){
     if(themeSwitchInput.checked) {
-        // TODO Change image based on theme
         rootElement.style.setProperty("--mainColor", "rgb(24, 26, 27, 0.9)");
         rootElement.style.setProperty("--secondaryColor", "rgb(232, 230, 227)");
         rootElement.style.setProperty("--contentBG", "rgb(24, 26, 27, 0.5)");
@@ -57,3 +56,5 @@ navBtn.addEventListener('click', () => {
 
 langBtn.addEventListener('click', () => { location.href="index_en.html"; });
 themeSwitch.addEventListener('click', updateTheme);
+
+// TODO Ulož switch state do local storage
