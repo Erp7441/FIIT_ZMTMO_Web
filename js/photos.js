@@ -27,14 +27,14 @@ function createImage(imagesArray, imageIndex, direction) {
     imgObject.setAttribute("src", imagesArray[imageIndex]);
     imgObject.setAttribute("class", "slideImg");
     if(direction == "right"){
-        imgObject.style.left = "4000px";
+        imgObject.style.left = "200vw";
     }
     else if(direction == "left"){
-        imgObject.style.left = "-4000px";
+        imgObject.style.left = "-200vw";
     }
     photoFrame.appendChild(imgObject);
     setTimeout(() => {
-        imgObject.style.left = "550px";
+        imgObject.style.left = "var(--photoSize)";
     }, 500);
     
     return imgObject;
@@ -42,10 +42,10 @@ function createImage(imagesArray, imageIndex, direction) {
 
 function removeImage(direction){
     if(direction == "right"){
-        img.style.left = "-4000px";
+        img.style.left = "-200vw";
     }
     else if(direction == "left"){
-        img.style.left = "4000px"
+        img.style.left = "200vw"
     }
     if (img) {
         setTimeout(() => {

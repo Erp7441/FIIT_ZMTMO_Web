@@ -1,24 +1,29 @@
+:root{
+    --photoSize: 31vw;
+}
+
 article{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     width: 85vw;
+    left: 6vw;
     height: 70vh;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 .controlBtn {
-    width: 20px;
+    width: 1vw;
     margin-top: 15px;
     filter: invert(100);
 }
 
 .slideImg{
     position: absolute;
-    top: 10px;
-    width: 500px;
-    left: 550px;
+    top: 0.5vw;
+    width: 27vw;
+    left: var(--photoSize);
     transition: 0.5s linear;
     height: auto;
 }
@@ -32,4 +37,19 @@ article{
 
 }
 
-
+@media screen and (max-width: 760px) {
+    :root{
+        --photoSize: 30vw;
+    }
+    article{
+        width: 65vw;
+    }
+    .controlBtn {
+        width: 5vw;
+        filter: invert(100);
+    }
+    .slideImg{
+        top: 50vw;
+        left: var(--photoSize);
+    }
+}

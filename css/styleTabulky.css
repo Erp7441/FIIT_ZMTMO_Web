@@ -1,4 +1,5 @@
 table{
+    font-size: 20px;
     position:relative;
     left:25vw;
     width: 50vw;
@@ -10,9 +11,24 @@ table{
     padding-left: 15px;
     padding-bottom: 10px;
     border: 2px solid var(--secondaryColor);
+    border-collapse: collapse;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+table::-webkit-scrollbar {
+    display: none;
 }
 
 td{
     text-align:center;
+    padding: 5px 5px;
 }
+
+th{
+    text-align:center;
+    padding: 5px 5px;
+}
+
+
 

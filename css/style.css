@@ -207,7 +207,7 @@ input:checked + #slider:before {
 
 article{
     position:relative;
-    left:180px;
+    left:10vw;
     width: 30vw;
     overflow: auto;
     margin-top: 20px;
@@ -223,4 +223,13 @@ article{
 
 article h2{
     text-align: center;
+}
+
+/*----------------------------------------------------PHONE----------------------------------------------------*/
+
+@media screen and (max-width: 760px) {
+    /** CSS pre tablet a mobil */
+    article{
+        
+    }
 }

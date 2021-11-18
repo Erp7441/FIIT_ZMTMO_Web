@@ -1,0 +1,8 @@
+tr{
+    border-bottom: 0.5px solid var(--secondaryColor);
+    border-right: 0.5px solid var(--secondaryColor);
+}
+
+th{
+    border-right: 0.5px solid var(--secondaryColor);
+}
