@@ -46,15 +46,29 @@ osTheme.addEventListener('change', (event) => {
 navBtn.addEventListener('click', () => {
     if(sideMenu.style.left == "-250px"){
         sideMenu.style.left = "0";
+        navBtn.style.position = "fixed";
         navBtnImg.src = "images/icons/close.png";
     }
     else{
         sideMenu.style.left = "-250px";
+        navBtn.style.position = "absolute";
         navBtnImg.src = "images/icons/menu.png";
     }
 });
 
-langBtn.addEventListener('click', () => { location.href="index_en.html"; });
-themeSwitch.addEventListener('click', updateTheme);
+langBtn.addEventListener('click', () => {
+    let currentPage = window.location.pathname;
+    let wantedPage = currentPage.split("/").pop();
+    wantedPage = wantedPage.split(".");
+    wantedPage.splice(1, 0, ".");
 
-// TODO Ulož switch state do local storage
+    if(!currentPage.includes("_en")){
+        wantedPage.splice(1, 0, "_en");
+    }
+    else{
+        wantedPage[0] = wantedPage[0].replace("_en", "");
+    }
+    window.location.href = wantedPage.join("");
+});
+
+themeSwitch.addEventListener('click', updateTheme);

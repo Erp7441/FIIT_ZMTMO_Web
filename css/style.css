@@ -78,8 +78,7 @@ header div{
 }
 
 header h1{
-    margin: 5px;
-    
+    margin: 5px; 
 }
 
 header img{
@@ -107,6 +106,7 @@ header img{
     background: var(--mainColor);
     transition: 0.5s;
     z-index: 2;
+    overflow:auto;
 }
 
 nav ul li{
@@ -118,13 +118,12 @@ nav ul li{
     width: 50px;
     height: 50px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     left: 30px;
     top: 20px;
     border-radius: 3px;
     z-index: 3;
     cursor: pointer;
-
 }
 
 #navBtn img{
@@ -206,7 +205,6 @@ input:checked + #slider:before {
     border-radius: 50%;
 }
 
-
 /*----------------------------------------------------CONTENT----------------------------------------------------*/
 
 article{
@@ -223,6 +221,7 @@ article{
     background-color: var(--contentBG);
     border: 2px solid var(--secondaryColor);
     border-radius: 30px;
+    line-height: 1.5rem;
 }
 
 article h2{
@@ -231,9 +230,40 @@ article h2{
 
 /*----------------------------------------------------PHONE----------------------------------------------------*/
 
+@media screen and (max-width:1646px){
+    article{
+        width: 82vw !important;
+        left: 7vw;
+    }
+}
+
 @media screen and (max-width: 760px) {
     /** CSS pre tablet a mobil */
     article{
-        
+        width: 72vw !important;
+    }
+    section{
+        justify-content: left;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    article{
+        left: 6vw;
+    }
+    #logo{
+        display:none;
+    }
+    #navBtn{
+        left: 2vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    header h1{
+        margin-left: 25vw;
+        margin-right: 1vw;
+        text-align: right;
     }
 }
