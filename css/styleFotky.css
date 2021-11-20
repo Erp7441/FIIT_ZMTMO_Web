@@ -1,8 +1,8 @@
-:root{
+:root {
     --photoSize: 31vw;
 }
 
-article{
+article {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -11,6 +11,7 @@ article{
     height: 70vh;
     padding-right: 40px;
     padding-left: 40px;
+    padding-bottom: 60px;
 }
 
 .controlBtn {
@@ -19,36 +20,50 @@ article{
     filter: invert(var(--accents));
 }
 
-.slideImg{
+.slideImg {
     position: absolute;
     top: 0.5vw;
     width: 27vw;
     left: var(--photoSize);
-    transition: 0.5s linear;
+    transition: 1s linear;
     height: auto;
 }
 
-#photosNextBtn{
+#photosNextBtn {
     align-self: center;
 }
 
-#photosPreviousBtn{
+#photosPreviousBtn {
     align-self: center;
 
+}
+
+#counter {
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    top: 104%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
 }
 
 @media screen and (max-width: 760px) {
-    :root{
+    :root {
         --photoSize: 30vw;
     }
-    article{
+
+    article {
         width: 65vw;
     }
+
     .controlBtn {
         width: 5vw;
         filter: invert(100);
     }
-    .slideImg{
+
+    .slideImg {
         top: 50vw;
         left: var(--photoSize);
     }

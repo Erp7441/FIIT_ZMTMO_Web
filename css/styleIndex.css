@@ -27,7 +27,6 @@
 
 #introduction{
     display:grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: "popis obrazok";
     height: auto;
     max-width: 100vw;
