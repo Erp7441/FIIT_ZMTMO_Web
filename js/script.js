@@ -33,7 +33,7 @@ function updateTheme(){
 
 //------------------------------------------------INITIALIZATION------------------------------------------------
 
-sideMenu.style.left = "-250px";
+sideMenu.style.left = "calc(-1*var(--navSize))";
 themeSwitchInput.checked = osTheme.matches; updateTheme();
 
 //------------------------------------------------SIDE MENU------------------------------------------------
@@ -44,13 +44,13 @@ osTheme.addEventListener('change', (event) => {
 });
 
 navBtn.addEventListener('click', () => {
-    if(sideMenu.style.left == "-250px"){
+    if(sideMenu.style.left == "calc(-1*var(--navSize))"){
         sideMenu.style.left = "0";
         navBtn.style.position = "fixed";
         navBtnImg.src = "images/icons/close.png";
     }
     else{
-        sideMenu.style.left = "-250px";
+        sideMenu.style.left = "calc(-1*var(--navSize))";
         navBtn.style.position = "absolute";
         navBtnImg.src = "images/icons/menu.png";
     }

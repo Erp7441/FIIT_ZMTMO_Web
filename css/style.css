@@ -7,6 +7,11 @@
     --secondaryColor: rgb(232, 230, 227);
     --contentBG: rgba(24, 26, 27, 0.5);
     --accents: 100%;
+    --navSize: 13vw;
+    /*
+        0.052vw = 1px;
+        0.103vh = 1px;
+    */
 }
 
 html{
@@ -42,14 +47,14 @@ body{
 a{
     text-decoration:none;
     color: inherit;
-    border-bottom: 0px solid rgb(0, 140, 255);
+    border-bottom: 0vw solid rgb(0, 140, 255);
     transition: border-width 0.05s linear;
     transition: color 0.1s linear;
 }
 
 a:hover{
     color:rgb(0, 140, 255);
-    border-bottom-width: 2.5px;
+    border-bottom-width: 0.2575vh;
 }
 
 /*----------------------------------------------------HEADER----------------------------------------------------*/
@@ -57,8 +62,8 @@ a:hover{
 header{
     display:flex;
     position: relative;
-    border-bottom: 2px solid var(--secondaryColor);
-    height: 100px;
+    border-bottom: 0.206vh solid var(--secondaryColor);
+    height: 5.2vw;
     width: 100vw;
     font-family: 'Comic Neue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     align-items: center;
@@ -71,21 +76,21 @@ header div{
     height: -webkit-fit-content;
     width: -moz-fit-content;
     height: -moz-fit-content;
-    bottom: 30px;
+    bottom: 1.5vw;
     margin-right: 1vw;
     margin-top: 1vh;
     
 }
 
 header h1{
-    margin: 5px; 
+    margin: 0.515vh 0.26vw; 
 }
 
 header img{
     position: absolute;
-    width: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 2.6vw;
+    margin-left: 1.04vw;
+    margin-right: 1.04vw;
     right: 0;
     height: auto;
 }
@@ -97,10 +102,10 @@ header img{
 /*----------------------------------------------------SIDE MENU----------------------------------------------------*/
 
 #sideMenu{
-    width: 250px;
+    width: var(--navSize);
     height: 100vh;
     position: fixed;
-    left: -250px;
+    left: calc(-1*var(--navSize));
     top: 0;
     text-align: right;
     background: var(--mainColor);
@@ -111,30 +116,30 @@ header img{
 
 nav ul li{
     list-style: none;
-    margin: 50px 20px;
+    margin: 2.6vw 1vw;
 }
 
 #navBtn{
-    width: 50px;
-    height: 50px;
+    width: 2.6vw;
+    height: 5.15vh;
     text-align: center;
     position: absolute;
-    left: 30px;
-    top: 20px;
-    border-radius: 3px;
+    left: 1.5vw;
+    top: 2vh;
+    border-radius: 0.156vw;
     z-index: 3;
     cursor: pointer;
 }
 
 #navBtn img{
-    width: 20px;
-    margin-top: 15px;
+    width: 1.04vw;
+    margin-top: 1.1545vh;
     filter: invert(var(--accents));
 }
 
 #langBtnImg{
-    width: 50px;
-    margin-right: 10px;
+    width: 2.6vw;
+    margin-right: 0.52vw;
     filter: brightness(100%);
     transition: filter 0.4s linear;
 }
@@ -146,11 +151,11 @@ nav ul li{
 #themeSwitch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-    top: 30px;
-    right: 15px;
-    margin-bottom: 10px;
+    width: 3.12vw;
+    height: 3.502vh;
+    top: 1.5vw;
+    right: 0.78vw;
+    margin-bottom: 1.03vw;
 }
 
 #themeSwitch input { 
@@ -174,10 +179,10 @@ nav ul li{
 #slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 2.678vh;
+    width: 1.352vw;
+    left: 0.208vw;
+    bottom: 0.412vh;
     background-color: var(--mainColor);
     -webkit-transition: .4s;
     transition: .4s;
@@ -188,17 +193,17 @@ input:checked + #slider {
 }
 
 input:focus + #slider {
-    box-shadow: 0 0 1px var(--secondaryColor);
+    box-shadow: 0 0 0.052vw var(--secondaryColor);
 }
 
 input:checked + #slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(1.352vw);
+    -ms-transform: translateX(1.352vw);
+    transform: translateX(1.352vw);
 }
 
 #slider {
-    border-radius: 34px;
+    border-radius: 1.768vw;
 }
 
 #slider:before {
@@ -212,15 +217,15 @@ article{
     left:10vw;
     width: 30vw;
     overflow: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-right: 40px;
-    padding-left: 15px;
-    padding-bottom: 10px;
+    margin-top: 2.06vh;
+    margin-bottom: 2.06vh;
+    padding-top: 0.515vh;
+    padding-right: 2.08vw;
+    padding-left: 0.78vw;
+    padding-bottom: 1.03vh;
     background-color: var(--contentBG);
-    border: 2px solid var(--secondaryColor);
-    border-radius: 30px;
+    border: 0.206vh solid var(--secondaryColor);
+    border-radius: 1.5vw;
     line-height: 1.5rem;
 }
 
@@ -229,6 +234,107 @@ article h2{
 }
 
 /*----------------------------------------------------PHONE----------------------------------------------------*/
+
+@media screen and (min-width:1921px){
+    html, body{
+        font-size: 0.8vw;
+        line-height: 1.25vw;
+    }
+    #sideMenu{
+        font-size: 0.8vw;
+    }    
+}
+
+@media screen and (max-width:1920px){
+    :root{
+        --navSize: 250px;
+    }
+    header{
+        border-bottom: 2px solid var(--secondaryColor);
+        height: 100px;
+        width: 100vw;
+    } 
+
+    header h1{
+        margin: 5px; 
+    }
+    
+    header img{
+        position: absolute;
+        width: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        right: 0;
+        height: auto;
+    }
+    
+    header div{
+        bottom: 30px;        
+    }
+
+    nav ul li{
+        margin: 50px 20px;
+    }
+    
+    #navBtn{
+        width: 50px;
+        height: 50px;
+        left: 30px;
+        top: 20px;
+        border-radius: 3px;
+    }
+    
+    #navBtn img{
+        width: 20px;
+        margin-top: 15px;
+    }
+    
+    #langBtnImg{
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    #themeSwitch {
+        width: 60px;
+        height: 34px;
+        top: 30px;
+        right: 15px;
+        margin-bottom: 10px;
+    }
+    
+    #slider {
+        border-radius: 34px;
+    }
+    
+    #slider:before {
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        border-radius: 50%;
+    }
+
+    input:focus + #slider {
+        box-shadow: 0 0 1px var(--secondaryColor);
+    }
+
+    input:checked + #slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    
+    article{
+        width: 30vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-right: 40px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        border-radius: 30px;
+    }
+}
 
 @media screen and (max-width:1646px){
     article{
@@ -245,7 +351,6 @@ article h2{
     section{
         justify-content: left;
     }
-    
 }
 
 @media screen and (max-width: 450px){
