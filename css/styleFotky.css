@@ -16,7 +16,7 @@ article{
 .controlBtn {
     width: 1vw;
     margin-top: 15px;
-    filter: invert(100);
+    filter: invert(var(--accents));
 }
 
 .slideImg{
