@@ -111,7 +111,7 @@ header img {
     text-align: right;
     background: var(--mainColor);
     transition: 0.5s;
-    z-index: 2;
+    z-index: 3;
     overflow: auto;
 }
 
@@ -128,7 +128,7 @@ nav ul li {
     left: 1.5vw;
     top: 2vh;
     border-radius: 0.156vw;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
 }
 
@@ -234,8 +234,8 @@ article h2 {
     text-align: center;
 }
 
-span {
-    font-size: 15px;
+#counter {
+    font-size: 20px;
 }
 
 /*----------------------------------------------------PHONE----------------------------------------------------*/
