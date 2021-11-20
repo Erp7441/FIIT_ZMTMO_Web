@@ -31,10 +31,12 @@ article {
 
 #photosNextBtn {
     align-self: center;
+    z-index: 3;
 }
 
 #photosPreviousBtn {
     align-self: center;
+    z-index: 3;
 
 }
 
@@ -51,7 +53,7 @@ article {
 
 @media screen and (max-width: 760px) {
     :root {
-        --photoSize: 30vw;
+        --photoSize: 1vw;
     }
 
     article {
@@ -64,7 +66,7 @@ article {
     }
 
     .slideImg {
-        top: 50vw;
-        left: var(--photoSize);
+        top: 10vh;
+        width: 90vw;
     }
 }
