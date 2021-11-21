@@ -34,12 +34,17 @@ function updateTheme(){
 //------------------------------------------------INITIALIZATION------------------------------------------------
 
 sideMenu.style.left = "calc(-1*var(--navSize))";
-themeSwitchInput.checked = osTheme.matches; updateTheme();
+
+if (localStorage.getItem("themeSetting") === null) {
+    localStorage.setItem("themeSetting", osTheme.matches);
+}
+themeSwitchInput.checked = JSON.parse(localStorage.getItem("themeSetting")); updateTheme();
 
 //------------------------------------------------SIDE MENU------------------------------------------------
 
 osTheme.addEventListener('change', (event) => {
     themeSwitchInput.checked = event.matches;
+    localStorage.setItem("themeSetting", themeSwitchInput.checked);
     updateTheme();
 });
 
@@ -71,4 +76,7 @@ langBtn.addEventListener('click', () => {
     window.location.href = wantedPage.join("");
 });
 
-themeSwitch.addEventListener('click', updateTheme);
+themeSwitch.addEventListener('click', () => {
+    localStorage.setItem("themeSetting", themeSwitchInput.checked);
+    updateTheme();
+});

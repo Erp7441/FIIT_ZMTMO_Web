@@ -1,5 +1,3 @@
-//TODO vyriešiť bug, občas sa spawene obrazok rovno na mieste.
-
 //------------------------------------------------ELEMENTS------------------------------------------------
 
 const photosNextBtn = document.getElementById('photosNextBtn');
