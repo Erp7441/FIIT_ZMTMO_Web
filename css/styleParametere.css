@@ -6,3 +6,11 @@ tr{
 th{
     border-right: 0.5px solid var(--secondaryColor);
 }
+
+
+@media screen and (max-width: 540px) {
+
+    table {
+        left: 20vw;
+    }
+}
