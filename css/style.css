@@ -389,4 +389,7 @@ article h2 {
         margin-right: 1vw !important;
         text-align: right !important;
     }
+    #background{
+        background-attachment:scroll;
+    }
 }
