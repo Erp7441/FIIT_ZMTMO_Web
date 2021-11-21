@@ -1,0 +1,11 @@
+#background{
+    background-attachment:scroll;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    table {
+        display:none;
+    }
+}

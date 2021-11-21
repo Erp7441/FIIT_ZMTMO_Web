@@ -1,7 +1,22 @@
+#background{
+    background-attachment:scroll;
+}
+
 tr{
     border-bottom: 0.5px solid var(--secondaryColor);
 }
 
 tr th{
     border-right: 0.5px solid var(--secondaryColor);
+}
+
+@media screen and (max-width: 960px) {
+    
+    table {
+        width: auto !important;
+        left: auto !important;
+    }
+    #background{
+        width: 100vw;
+    }
 }

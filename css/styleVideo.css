@@ -1,6 +1,6 @@
 video{
     position:relative;
-    left: 8vw;
+    left: 16vw;
     width: 50vw;
     height: 50vh;
 }
@@ -8,4 +8,13 @@ video{
 h3{
     text-align: center;
     font-style: italic;
+}
+
+@media screen and (max-width: 760px) {
+
+    /** CSS pre tablet a mobil */
+    video {
+        width: 72vw !important;
+        left: 2vw !important;
+    }
 }

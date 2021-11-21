@@ -244,116 +244,116 @@ article h2 {
 
     html,
     body {
-        font-size: 0.8vw;
-        line-height: 1.25vw;
+        font-size: 0.8vw !important;
+        line-height: 1.25vw !important;
     }
 
     #sideMenu {
-        font-size: 0.8vw;
+        font-size: 0.8vw !important;
     }
 
     article {
-        height: 78vh;
+        height: 78vh !important;
     }
 }
 
 @media screen and (max-width:1920px) {
     :root {
-        --navSize: 250px;
+        --navSize: 250px !important;
     }
 
     header {
-        border-bottom: 2px solid var(--secondaryColor);
-        height: 100px;
-        width: 100vw;
+        border-bottom: 2px solid var(--secondaryColor) !important;
+        height: 100px !important;
+        width: 100vw !important;
     }
 
     header h1 {
-        margin: 5px;
+        margin: 5px !important;
     }
 
     header img {
-        position: absolute;
-        width: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        right: 0;
-        height: auto;
+        position: absolute !important;
+        width: 50px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        right: 0 !important;
+        height: auto !important;
     }
 
     header div {
-        bottom: 30px;
+        bottom: 30px !important;
     }
 
     nav ul li {
-        margin: 50px 20px;
+        margin: 50px 20px !important;
     }
 
     #navBtn {
-        width: 50px;
-        height: 50px;
-        left: 30px;
-        top: 20px;
-        border-radius: 3px;
+        width: 50px !important;
+        height: 50px !important;
+        left: 30px !important;
+        top: 20px !important;
+        border-radius: 3px !important;
     }
 
     #navBtn img {
-        width: 20px;
-        margin-top: 15px;
+        width: 20px !important;
+        margin-top: 15px !important;
     }
 
     #langBtnImg {
-        width: 50px;
-        margin-right: 10px;
+        width: 50px !important;
+        margin-right: 10px !important;
     }
 
     #themeSwitch {
-        width: 60px;
-        height: 34px;
-        top: 30px;
-        right: 15px;
-        margin-bottom: 10px;
+        width: 60px !important;
+        height: 34px !important;
+        top: 30px !important;
+        right: 15px !important;
+        margin-bottom: 10px !important;
     }
 
     #slider {
-        border-radius: 34px;
+        border-radius: 34px !important;
     }
 
     #slider:before {
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        border-radius: 50%;
+        height: 26px !important;
+        width: 26px !important;
+        left: 4px !important;
+        bottom: 4px !important;
+        border-radius: 50% !important;
     }
 
     input:focus+#slider {
-        box-shadow: 0 0 1px var(--secondaryColor);
+        box-shadow: 0 0 1px var(--secondaryColor) !important;
     }
 
     input:checked+#slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+        -webkit-transform: translateX(26px) !important;
+        -ms-transform: translateX(26px) !important;
+        transform: translateX(26px) !important;
     }
 
     article {
-        width: 30vw;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-top: 5px;
-        padding-right: 40px;
-        padding-left: 15px;
-        padding-bottom: 10px;
-        border-radius: 30px;
-        border: 2px solid var(--secondaryColor);
+        width: 30vw !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding-top: 5px !important;
+        padding-right: 40px !important;
+        padding-left: 15px !important;
+        padding-bottom: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid var(--secondaryColor) !important;
     }
 }
 
 @media screen and (max-width:1646px) {
     article {
         width: 82vw !important;
-        left: 7vw;
+        left: 7vw !important;
     }
 }
 
@@ -365,28 +365,28 @@ article h2 {
     }
 
     section {
-        justify-content: left;
+        justify-content: left !important;
     }
 }
 
 @media screen and (max-width: 450px) {
     article {
-        left: 6vw;
+        left: 6vw !important;
     }
 
     #logo {
-        display: none;
+        display: none !important;
     }
 
     #navBtn {
-        left: 2vw;
+        left: 2vw !important;
     }
 }
 
 @media screen and (max-width:400px) {
     header h1 {
-        margin-left: 25vw;
-        margin-right: 1vw;
-        text-align: right;
+        margin-left: 25vw !important;
+        margin-right: 1vw !important;
+        text-align: right !important;
     }
 }
