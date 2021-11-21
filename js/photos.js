@@ -21,7 +21,10 @@ let images = [
     'images/fotky/side1.jpg',
     'images/fotky/side2.jpg',
     'images/fotky/UI1.gif',
-    'images/fotky/UI2.gif'
+    'images/fotky/UI2.gif',
+    'images/fotky/UI3.jpg',
+    'images/fotky/UI4.jpg',
+    'images/fotky/UI5.jpg'
 ];
 
 //------------------------------------------------FUNCTIONS------------------------------------------------
