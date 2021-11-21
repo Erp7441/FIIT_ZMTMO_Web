@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Samsung galaxy A8">
+    <meta name="author" content="Martin Szabo">
+    <link rel="shortcut icon" href="images/logoWhite.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleFotky.css">
+    <title>My phone</title>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="sideMenu">
+        <label id="themeSwitch">
+            <input type="checkbox" id="themeSwitchInput">
+            <span id="slider"></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index_en.html">Home</a></li>
+                <li><a href="parametre_en.html">Parameters</a></li>
+                <li><a href="porovnania_en.html">Comparison</a></li>
+                <li><a href="recenzie_en.html">Reviews</a></li>
+                <li><a href="fotky_en.html">Photos</a></li>
+                <li><a href="videa_en.html">Videos</a></li>
+                <li><a href="zvuk_en.html">Sound</a></li>
+                <li><a href="zdroje_en.html">Source</a></li>
+            </ul>
+        </nav>
+        <div id="langBtn">
+            <img src="images/icons/sk.png" alt="Slovenský Jazyk" id="langBtnImg">
+        </div>
+    </div>
+    <div id="navBtn">
+        <img src="images/icons/menu.png" alt="Navigation" id="navBtnImg">
+    </div>
+
+    <header>
+        <h1>Photos</h1>
+        <img src="images/logo.png" alt="Logo" id="logo">
+    </header>
+    <article>
+        <div id="photosPreviousBtn">
+            <img src="images/icons/left.png" alt="Predchadzajuci" id="photosPreviousBtnImg" class="controlBtn">
+        </div>
+        <div id="photoFrame">
+            <img src="images/fotky/back.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/front.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/frontDisplay.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/frontDisplay2.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/frontLocked.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/port.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/side1.jpg" alt="" class="slideImg" style="display:none;">
+            <img src="images/fotky/side2.jpg" alt="" class="slideImg" style="display:none;">
+        </div>
+        <div id="counter">
+            <span id="currentCounter">1</span>/<span id="allCounter"></span> 
+        </div>
+        <div id="photosNextBtn">
+            <img src="images/icons/right.png" alt="Dalsi" id="photosNextBtnImg" class="controlBtn">
+        </div>
+        
+    </article>
+    
+    <script src="js/script.js"></script>
+    <script src="js/photos.js"></script>
+</body>
+
+</html>
