@@ -19,7 +19,9 @@ let images = [
     'images/fotky/frontLocked.jpg',
     'images/fotky/port.jpg',
     'images/fotky/side1.jpg',
-    'images/fotky/side2.jpg'
+    'images/fotky/side2.jpg',
+    'images/fotky/UI1.gif',
+    'images/fotky/UI2.gif'
 ];
 
 //------------------------------------------------FUNCTIONS------------------------------------------------

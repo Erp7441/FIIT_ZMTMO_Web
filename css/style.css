@@ -244,109 +244,109 @@ article h2 {
 
     html,
     body {
-        font-size: 0.8vw !important;
-        line-height: 1.25vw !important;
+        font-size: 0.8vw;
+        line-height: 1.25vw;
     }
 
     #sideMenu {
-        font-size: 0.8vw !important;
+        font-size: 0.8vw;
     }
 
     article {
-        height: 78vh !important;
+        height: 78vh;
     }
 }
 
 @media screen and (max-width:1920px) {
     :root {
-        --navSize: 250px !important;
+        --navSize: 250px;
     }
 
     header {
-        border-bottom: 2px solid var(--secondaryColor) !important;
-        height: 100px !important;
-        width: 100vw !important;
+        border-bottom: 2px solid var(--secondaryColor);
+        height: 100px;
+        width: 100vw;
     }
 
     header h1 {
-        margin: 5px !important;
+        margin: 5px;
     }
 
     header img {
-        position: absolute !important;
-        width: 50px !important;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        right: 0 !important;
-        height: auto !important;
+        position: absolute;
+        width: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        right: 0;
+        height: auto;
     }
 
     header div {
-        bottom: 30px !important;
+        bottom: 30px;
     }
 
     nav ul li {
-        margin: 50px 20px !important;
+        margin: 50px 20px;
     }
 
     #navBtn {
-        width: 50px !important;
-        height: 50px !important;
-        left: 30px !important;
-        top: 20px !important;
-        border-radius: 3px !important;
+        width: 50px;
+        height: 50px;
+        left: 30px;
+        top: 20px;
+        border-radius: 3px;
     }
 
     #navBtn img {
-        width: 20px !important;
-        margin-top: 15px !important;
+        width: 20px;
+        margin-top: 15px;
     }
 
     #langBtnImg {
-        width: 50px !important;
-        margin-right: 10px !important;
+        width: 50px;
+        margin-right: 10px;
     }
 
     #themeSwitch {
-        width: 60px !important;
-        height: 34px !important;
-        top: 30px !important;
-        right: 15px !important;
-        margin-bottom: 10px !important;
+        width: 60px;
+        height: 34px;
+        top: 30px;
+        right: 15px;
+        margin-bottom: 10px;
     }
 
     #slider {
-        border-radius: 34px !important;
+        border-radius: 34px;
     }
 
     #slider:before {
-        height: 26px !important;
-        width: 26px !important;
-        left: 4px !important;
-        bottom: 4px !important;
-        border-radius: 50% !important;
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        border-radius: 50%;
     }
 
     input:focus+#slider {
-        box-shadow: 0 0 1px var(--secondaryColor) !important;
+        box-shadow: 0 0 1px var(--secondaryColor);
     }
 
     input:checked+#slider:before {
-        -webkit-transform: translateX(26px) !important;
-        -ms-transform: translateX(26px) !important;
-        transform: translateX(26px) !important;
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
     }
 
     article {
         width: 30vw;
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
-        padding-top: 5px !important;
-        padding-right: 40px !important;
-        padding-left: 15px !important;
-        padding-bottom: 10px !important;
-        border-radius: 30px !important;
-        border: 2px solid var(--secondaryColor) !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-right: 40px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        border-radius: 30px;
+        border: 2px solid var(--secondaryColor);
     }
 }
 
