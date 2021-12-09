@@ -1,4 +1,4 @@
-//------------------------------------------------ELEMENTS------------------------------------------------
+//------------------------------------------------ELEMENTY------------------------------------------------
 
 const photosNextBtn = document.getElementById('photosNextBtn');
 const photosPreviousBtn = document.getElementById('photosPreviousBtn');
@@ -6,28 +6,13 @@ const photoFrame = document.getElementById('photoFrame');
 const allCounter = document.getElementById('allCounter');
 const currentCounter = document.getElementById('currentCounter');
 
-//------------------------------------------------VARIABLES------------------------------------------------
+//------------------------------------------------PREMENNE------------------------------------------------
 
 let imagesIndex = 0;
 let img;
 let wait = 0;
-let images = [
-    'images/fotky/back.jpg',
-    'images/fotky/front.jpg',
-    'images/fotky/frontDisplay.jpg',
-    'images/fotky/frontDisplay2.jpg',
-    'images/fotky/frontLocked.jpg',
-    'images/fotky/port.jpg',
-    'images/fotky/side1.jpg',
-    'images/fotky/side2.jpg',
-    'images/fotky/UI1.gif',
-    'images/fotky/UI2.gif',
-    'images/fotky/UI3.jpg',
-    'images/fotky/UI4.jpg',
-    'images/fotky/UI5.jpg'
-];
 
-//------------------------------------------------FUNCTIONS------------------------------------------------
+//------------------------------------------------FUMKCIE-------------------------------------------------
 
 function createImage(imagesArray, imageIndex, direction) {
     let imgObject = document.createElement("img");
@@ -63,12 +48,12 @@ function removeImage(direction, imgObject) {
     }
 }
 
-//------------------------------------------------INITIALIZATION------------------------------------------------
+//----------------------------------------------INICIALIZACIA---------------------------------------------
 
 img = createImage(images, imagesIndex);
 allCounter.innerHTML = images.length;
 
-//------------------------------------------------SLIDESHOW------------------------------------------------
+//------------------------------------------------GALERIA-------------------------------------------------
 
 photosNextBtn.addEventListener('click', () => {
     if(wait == 0) {

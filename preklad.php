@@ -463,7 +463,6 @@ $sounds = array(
     )
 );
 
-
 $parameters = array(
     "Title" => array("sk" => "Parametre", "en" => "Parameters"),
     "Yes" => array("sk" => "Áno", "en" => "Yes"),
@@ -1067,8 +1066,5 @@ $comparison = array(
     "PriceValueA52" => array("sk" => "459€", "en" => "£400"),
     "PriceValuei13" => array("sk" => "700€", "en" => "£600"),
 );
-
-
-# TODO pridat php aj pre duplicitne veci
 
 ?>
