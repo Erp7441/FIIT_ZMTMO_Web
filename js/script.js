@@ -31,14 +31,69 @@ function updateTheme(){
     }
 }
 
+function getCookie(menoCookie) {
+    let meno = menoCookie + "=";
+    let cookie = decodeURIComponent(document.cookie);
+    let cookieSplit = cookie.split(';');
+    for(let i = 0; i < cookieSplit.length; i++) {
+        let tmpCookie = cookieSplit[i];
+        while (tmpCookie.charAt(0) == ' ') {
+            tmpCookie = tmpCookie.substring(1);
+        }
+        if (tmpCookie.indexOf(meno) == 0) {
+            return tmpCookie.substring(meno.length, tmpCookie.length);
+        }
+    }
+    return null;
+}
+
+function updateLang(){
+    let lang = getCookie("lang");
+    if(lang == null){
+        document.cookie = "lang=sk;SameSite=Lax";
+    }
+    else if (lang != null){
+        if(lang == "sk"){
+            document.cookie = "lang=en;SameSite=Lax";
+        }
+        else if(lang == "en"){
+            document.cookie = "lang=sk;SameSite=Lax";
+        }
+    }
+}
+
+function showSideMenu(){
+    sideMenu.style.left = "0";
+    navBtn.style.position = "fixed";
+    navBtnImg.src = "images/icons/close.png";
+}
+
+function hideSideMenu(){
+    sideMenu.style.left = "calc(-1*var(--navSize))";
+    navBtn.style.position = "absolute";
+    navBtnImg.src = "images/icons/menu.png";
+}
+
+function updateSideMenu(){
+    if(localStorage.getItem("sideMenu") == 'true'){
+        showSideMenu();
+    }
+    else if(localStorage.getItem("sideMenu") == 'false'){
+        hideSideMenu();
+    }
+}
+
 //------------------------------------------------INITIALIZATION------------------------------------------------
 
-sideMenu.style.left = "calc(-1*var(--navSize))";
+document.addEventListener("DOMContentLoaded", () => {
+    
+    if (localStorage.getItem("sideMenu") === null) localStorage.setItem("sideMenu", 'false');
+    updateSideMenu();
 
-if (localStorage.getItem("themeSetting") === null) {
-    localStorage.setItem("themeSetting", osTheme.matches);
-}
-themeSwitchInput.checked = JSON.parse(localStorage.getItem("themeSetting")); updateTheme();
+    if (localStorage.getItem("themeSetting") === null) localStorage.setItem("themeSetting", osTheme.matches);
+    themeSwitchInput.checked = JSON.parse(localStorage.getItem("themeSetting")); updateTheme();
+})
+
 
 //------------------------------------------------SIDE MENU------------------------------------------------
 
@@ -49,31 +104,18 @@ osTheme.addEventListener('change', (event) => {
 });
 
 navBtn.addEventListener('click', () => {
-    if(sideMenu.style.left == "calc(-1*var(--navSize))"){
-        sideMenu.style.left = "0";
-        navBtn.style.position = "fixed";
-        navBtnImg.src = "images/icons/close.png";
+    if(localStorage.getItem("sideMenu") == 'true'){
+        localStorage.setItem("sideMenu", 'false');
     }
-    else{
-        sideMenu.style.left = "calc(-1*var(--navSize))";
-        navBtn.style.position = "absolute";
-        navBtnImg.src = "images/icons/menu.png";
+    else if(localStorage.getItem("sideMenu") == 'false'){
+        localStorage.setItem("sideMenu", 'true');
     }
+    updateSideMenu()
 });
 
 langBtn.addEventListener('click', () => {
-    let currentPage = window.location.pathname;
-    let wantedPage = currentPage.split("/").pop();
-    wantedPage = wantedPage.split(".");
-    wantedPage.splice(1, 0, ".");
-
-    if(!currentPage.includes("_en")){
-        wantedPage.splice(1, 0, "_en");
-    }
-    else{
-        wantedPage[0] = wantedPage[0].replace("_en", "");
-    }
-    window.location.href = wantedPage.join("");
+    updateLang();
+    window.location.reload();
 });
 
 themeSwitch.addEventListener('click', () => {

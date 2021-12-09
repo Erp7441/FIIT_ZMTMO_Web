@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php require_once 'preklad.php'; ?>
+<html lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -10,43 +11,20 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleFotky.css">
-    <title>My phone</title>
+    <title><?php echo $pageTitles["Photos"][$lang]; ?></title>
 </head>
 
 <body>
     <div id="background"></div>
-    <div id="sideMenu">
-        <label id="themeSwitch">
-            <input type="checkbox" id="themeSwitchInput">
-            <span id="slider"></span>
-        </label>
-        <nav>
-            <ul>
-                <li><a href="index_en.html">Home</a></li>
-                <li><a href="parametre_en.html">Parameters</a></li>
-                <li><a href="porovnania_en.html">Comparison</a></li>
-                <li><a href="recenzie_en.html">Reviews</a></li>
-                <li><a href="fotky_en.html">Photos</a></li>
-                <li><a href="videa_en.html">Videos</a></li>
-                <li><a href="zvuk_en.html">Sound</a></li>
-                <li><a href="zdroje_en.html">Source</a></li>
-            </ul>
-        </nav>
-        <div id="langBtn">
-            <img src="images/icons/sk.png" alt="Slovenský Jazyk" id="langBtnImg">
-        </div>
-    </div>
-    <div id="navBtn">
-        <img src="images/icons/menu.png" alt="Navigation" id="navBtnImg">
-    </div>
+    <?php include 'navigacia.php' ?>
 
     <header>
-        <h1>Photos</h1>
+        <h1><?php echo $photos["Title"][$lang] ?></h1>
         <img src="images/logo.svg" alt="Logo" id="logo">
     </header>
     <article>
         <div id="photosPreviousBtn">
-            <img src="images/icons/left.png" alt="Predchadzajuci" id="photosPreviousBtnImg" class="controlBtn">
+            <img src="images/icons/left.png" alt="<?php echo $alt["Previous"][$lang]; ?>" id="photosPreviousBtnImg" class="controlBtn">
         </div>
         <div id="photoFrame">
             <img src="images/fotky/back.jpg" alt="" class="slideImg" style="display:none;">
@@ -62,7 +40,7 @@
             <span id="currentCounter">1</span>/<span id="allCounter"></span> 
         </div>
         <div id="photosNextBtn">
-            <img src="images/icons/right.png" alt="Dalsi" id="photosNextBtnImg" class="controlBtn">
+            <img src="images/icons/right.png" alt="<?php echo $alt["Next"][$lang]; ?>" id="photosNextBtnImg" class="controlBtn">
         </div>
         
     </article>

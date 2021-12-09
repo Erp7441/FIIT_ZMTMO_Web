@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="sk">
+<?php require_once 'preklad.php'; ?>
+<html lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -11,132 +12,109 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleStred.css">
     <link rel="stylesheet" href="css/styleZvuk.css">
-    <title>Môj telefón</title>
+    <title><?php echo $pageTitles["Sound"][$lang]; ?></title>
 </head>
 
 <body>
     <div id="background"></div>
-    <div id="sideMenu">
-        <label id="themeSwitch">
-            <input type="checkbox" id="themeSwitchInput">
-            <span id="slider"></span>
-        </label>
-        <nav>
-        <ul>
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="parametre.html">Parametre</a></li>
-            <li><a href="porovnania.html">Porovnania</a></li>
-            <li><a href="recenzie.html">Recenzie</a></li>
-            <li><a href="fotky.html">Fotky</a></li>
-            <li><a href="videa.html">Videa</a></li>
-            <li><a href="zvuk.html">Zvuk</a></li>
-            <li><a href="zdroje.html">Zdroje</a></li>
-        </ul>
-        </nav>
-        <div id="langBtn">
-            <img src="images/icons/en.png" alt="English Language" id="langBtnImg">
-        </div>
-    </div>
-    <div id="navBtn">
-        <img src="images/icons/menu.png" alt="Navigacia" id="navBtnImg">
-    </div>
+    <?php include 'navigacia.php' ?>
     
     <header>
-        <h1>Zvuk</h1>
+        <h1><?php echo $sounds["Title"][$lang]; ?></h1>
         <img src="images/logo.svg" alt="Logo" id="logo">
     </header>
     
     <article>
-        <h3>Audio z telefónu</h3>
+        <h3><?php echo $sounds["AudioFromPhone"][$lang]; ?></h3>
         <p>Calm</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Calm.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Music Box</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Music_Box.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Nudge</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Nudge.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Over the Horizon</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Over_the_Horizon.mp3" type="audio/mp3">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Piggyback</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Piggyback.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Shrink Ray</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Shrink_Ray.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Snappy</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Snappy.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Sweet</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Sweet.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Tennis</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Tennis.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Tones</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Tones.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Treasure</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Treasure.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Welcome</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Welcome.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>
         <p>Whistle</p>
         <div class="audioWrapper">
             <audio controls>
                 <source src="audio/Whistle.ogg" type="audio/ogg">
-                Audio nepodporované
+                <?php echo $sounds["Error"][$lang]; ?>
             </audio>
         </div>      
     </article>

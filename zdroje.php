@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php require_once 'preklad.php'; ?>
+<html lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -11,47 +12,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleStred.css">
     <link rel="stylesheet" href="css/styleZdroje.css">
-    <title>My phone</title>
+    <title><?php echo $pageTitles["Sources"][$lang]; ?></title>
 </head>
 
 <body>
     <div id="background"></div>
-    <div id="sideMenu">
-        <label id="themeSwitch">
-            <input type="checkbox" id="themeSwitchInput">
-            <span id="slider"></span>
-        </label>
-        <nav>
-        <ul>
-            <li><a href="index_en.html">Home</a></li>
-            <li><a href="parametre_en.html">Parameters</a></li>
-            <li><a href="porovnania_en.html">Comparison</a></li>
-            <li><a href="recenzie_en.html">Reviews</a></li>
-            <li><a href="fotky_en.html">Photos</a></li>
-            <li><a href="videa_en.html">Videos</a></li>
-            <li><a href="zvuk_en.html">Sound</a></li>
-            <li><a href="zdroje_en.html">Source</a></li>
-        </ul>
-        </nav>
-        <div id="langBtn">
-            <img src="images/icons/sk.png" alt="Slovenský Jazyk" id="langBtnImg">
-        </div>
-    </div>
-    <div id="navBtn">
-        <img src="images/icons/menu.png" alt="Navigation" id="navBtnImg">
-    </div>
+    <?php include 'navigacia.php' ?>
     
     <header>
-        <h1>Source</h1>
+        <h1><?php echo $sources["Title"][$lang]; ?></h1>
         <img src="images/logo.svg" alt="Logo" id="logo">
     </header>
     
     <article>
-        <h2>Sources</h2>
-        The website serves as a first semester term project at the Faculty of Informatics and Information Technologies 
-        of the Slovak Technical University. This project is intended to show us as programmers practical application of 
-        basic knowledge of HTML, CSS and later PHP. The project has a lot of possibilities as we can improve it, but 
-        that is beyond the scope of this semester.The resources I drew from during the creation of this project are:
+        <h2><?php echo $sources["Title"][$lang]; ?></h2>
+        <?php echo $sources["First"][$lang]; ?>
         <ul>
             <li><a href="https://fony.dnes24.sk/clanky/13407-samsung-galaxy-a8-2018-a530">https://fony.dnes24.sk/clanky/13407-samsung-galaxy-a8-2018-a530</a></li>
             <li><a href="https://androidportal.zoznam.sk/2018/01/samsung-galaxy-a8-2018-recenzia-test/">https://androidportal.zoznam.sk/2018/01/samsung-galaxy-a8-2018-recenzia-test/</a></li>
@@ -61,7 +36,7 @@
             <li><a href="https://www.gadgetsnow.com/compare-mobile-phones/Samsung-Galaxy-A8-2018-vs-Apple-iPhone-XR-vs-Samsung-Galaxy-A52-5G-vs-Apple-iPhone-13">https://www.gadgetsnow.com/compare-mobile-phones/Samsung-Galaxy-A8-2018-vs-Apple-iPhone-XR-vs-Samsung-Galaxy-A52-5G-vs-Apple-iPhone-13</a></li>
             <li><a href="https://www.gadgetsnow.com/mobile-phones/Samsung-Galaxy-A8-2018 ">https://www.gadgetsnow.com/mobile-phones/Samsung-Galaxy-A8-2018 </a></li>
         </ul>
-        As an educational resource I have used:
+        <?php echo $sources["Second"][$lang]; ?>
         <ul>
             <li><a href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></li>
             <li><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/ </a></li>
@@ -70,18 +45,19 @@
             <li><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
         </ul>
     </article>
+
     <article id="contact">
         <form action="send.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <label for="fname"><?php echo $form["FirstName"][$lang]; ?></label>
+            <input type="text" id="fname" name="firstname" placeholder="<?php echo $form["FirstName"][$lang]; ?>">
         
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Last name">
+            <label for="lname"><?php echo $form["LastName"][$lang]; ?></label>
+            <input type="text" id="lname" name="lastname" placeholder="<?php echo $form["LastName"][$lang]; ?>">
         
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+            <label for="subject"><?php echo $form["Subject"][$lang]; ?></label>
+            <textarea id="subject" name="subject" placeholder="<?php echo $form["SubjectPlaceHolder"][$lang]; ?>" style="height:200px"></textarea>
         
-            <input type="submit" value="Submit">
+            <input type="submit" value="<?php echo $form["Submit"][$lang]; ?>">
         </form>
     </article> 
     <script src="js/script.js"></script>

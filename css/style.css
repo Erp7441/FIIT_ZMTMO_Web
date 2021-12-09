@@ -111,7 +111,7 @@ header img {
     text-align: right;
     background: var(--mainColor);
     transition: 0.5s;
-    z-index: 3;
+    z-index: 4;
     overflow: auto;
 }
 
