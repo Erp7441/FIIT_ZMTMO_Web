@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require_once 'preklad.php'; ?>
+<?php require_once 'php/preklad.php'; ?>
 <html lang="<?php echo $lang; ?>">
 
 <head>
@@ -16,7 +16,7 @@
 
 <body>
     <div id="background"></div>
-    <?php include 'navigacia.php' ?>
+    <?php include 'php/navigacia.php' ?>
 
     <header>
         <h1>Samsung Galaxy A8</h1>

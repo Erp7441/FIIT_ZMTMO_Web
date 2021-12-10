@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require_once 'preklad.php'; ?>
+<?php require_once 'php/preklad.php'; ?>
 <html lang="<?php echo $lang; ?>">
 
 <head>
@@ -11,13 +11,12 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleStred.css">
-    <link rel="stylesheet" href="css/styleZdroje.css">
     <title><?php echo $pageTitles["Sources"][$lang]; ?></title>
 </head>
 
 <body>
     <div id="background"></div>
-    <?php include 'navigacia.php' ?>
+    <?php include 'php/navigacia.php' ?>
     
     <header>
         <h1><?php echo $sources["Title"][$lang]; ?></h1>
@@ -45,21 +44,6 @@
             <li><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
         </ul>
     </article>
-
-    <article id="contact">
-        <form action="send.php">
-            <label for="fname"><?php echo $form["FirstName"][$lang]; ?></label>
-            <input type="text" id="fname" name="firstname" placeholder="<?php echo $form["FirstName"][$lang]; ?>">
-        
-            <label for="lname"><?php echo $form["LastName"][$lang]; ?></label>
-            <input type="text" id="lname" name="lastname" placeholder="<?php echo $form["LastName"][$lang]; ?>">
-        
-            <label for="subject"><?php echo $form["Subject"][$lang]; ?></label>
-            <textarea id="subject" name="subject" placeholder="<?php echo $form["SubjectPlaceHolder"][$lang]; ?>" style="height:200px"></textarea>
-        
-            <input type="submit" value="<?php echo $form["Submit"][$lang]; ?>">
-        </form>
-    </article> 
     <script src="js/script.js"></script>
 </body>
 

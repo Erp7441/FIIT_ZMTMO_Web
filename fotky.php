@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require_once 'preklad.php'; ?>
+<?php require_once 'php/preklad.php'; ?>
 <html lang="<?php echo $lang; ?>">
 
 <head>
@@ -16,14 +16,14 @@
 
 <body>
     <div id="background"></div>
-    <?php include 'navigacia.php' ?>
+    <?php include 'php/navigacia.php' ?>
 
     <header>
         <h1><?php echo $photos["Title"][$lang] ?></h1>
         <img src="images/logo.svg" alt="Logo" id="logo">
     </header>
     <article>
-        <?php include 'galeria.php' ?>
+        <?php include 'php/galeria.php' ?>
     </article>
     <script src="js/script.js"></script>
 </body>

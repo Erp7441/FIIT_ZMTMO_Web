@@ -16,6 +16,7 @@ $pageTitles = array(
     "Videos" => array("sk" => "Videa", "en" => "Videos"),
     "Sources" => array("sk" => "Zdroje", "en" => "Sources"),
     "Sound" => array("sk" => "Zvuk", "en" => "Sound"),
+    "Comments" => array("sk" => "Komentáre", "en" => "Comments"),
     "Comparison" => array("sk" => "Porovnania", "en" => "Comparison"),
     "Parameters" => array("sk" => "Parametre", "en" => "Parameters")
 );
@@ -28,6 +29,7 @@ $sideBar = array(
     "Photos" => array("sk" => "Fotky", "en" => "Photos"),
     "Videos" => array("sk" => "Videa", "en" => "Videos"),
     "Sound" => array("sk" => "Zvuk", "en" => "Sound"),
+    "Comments" => array("sk" => "Komentáre", "en" => "Comments"),
     "Source" => array("sk" => "Zdroje", "en" => "Source")
 );
 
@@ -446,12 +448,14 @@ $sources = array(
     )
 );
 
-$form = array(
-    "FirstName" => array("sk" => "Meno","en" => "First Name"),
-    "LastName" => array("sk" => "Priezvisko","en" => "Last Name"),
-    "Subject" => array("sk" => "Predmet","en" => "Subject"),
-    "SubjectPlaceHolder" => array("sk" => "Napíšte niečo...","en" => "Write something..."),
-    "Submit" => array("sk" => "Odoslať","en" => "Submit")
+$comments = array(
+    "Title" => array("sk" => "Komentáre","en" => "Comments"),
+    "Name" => array("sk" => "Meno","en" => "Name"),
+    "Messenge" => array("sk" => "Správa","en" => "Messenge"),
+    "MessengePlaceHolder" => array("sk" => "Napíšte niečo...","en" => "Write something..."),
+    "Submit" => array("sk" => "Odoslať","en" => "Submit"),
+    "ErrorName" => array("sk" => "Chyba nezadali ste meno","en" => "Error you have not entered name"),
+    "ErrorMsg" => array("sk" => "Chyba nezadali ste spravu","en" => "Error you have not entered messenge")
 );
 
 $sounds = array(
