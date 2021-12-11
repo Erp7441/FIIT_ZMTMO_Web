@@ -44,7 +44,7 @@
         $bZaciatok = true;
 
         while ($riadok = fgets($subor, filesize($cesta))) {
-            if($riadok === "---\n"){
+            if(strcmp($riadok,"---".PHP_EOL) === 0){
                 $bZaciatok = true;
                 echo "</div>";
                 continue;

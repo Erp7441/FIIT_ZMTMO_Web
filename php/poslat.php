@@ -8,7 +8,7 @@
     }
     $cesta = "../komentare.txt";
     $subor = fopen($cesta,"a");
-    fwrite($subor,"$meno:\n$sprava\n---\n", strlen($sprava));
+    fwrite($subor,"$meno:\n$sprava\n---".PHP_EOL, strlen("$meno:\n$sprava\n---".PHP_EOL));
     header("Location: ../komentare.php");
     fclose($subor);
 ?>
