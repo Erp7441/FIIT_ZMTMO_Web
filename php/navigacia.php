@@ -14,7 +14,7 @@
             <li><a href="videa.php"><?php echo $sideBar["Videos"][$lang]; ?></a></li>
             <li><a href="zvuk.php"><?php echo $sideBar["Sound"][$lang]; ?></a></li>
             <li><a href="komentare.php"><?php echo $sideBar["Comments"][$lang]; ?></a></li>
-            <li><a href="zdroje.php"><?php echo $sideBar["Source"][$lang]; ?></a></li>
+            <li><a href="zdroje.php"><?php echo $sideBar["Sources"][$lang]; ?></a></li>
         </ul>
     </nav>
     <div id="langBtn">

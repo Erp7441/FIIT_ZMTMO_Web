@@ -30,7 +30,7 @@ $sideBar = array(
     "Videos" => array("sk" => "Videa", "en" => "Videos"),
     "Sound" => array("sk" => "Zvuk", "en" => "Sound"),
     "Comments" => array("sk" => "Komentáre", "en" => "Comments"),
-    "Source" => array("sk" => "Zdroje", "en" => "Source")
+    "Sources" => array("sk" => "Zdroje", "en" => "Sources")
 );
 
 $introduction = array(
@@ -651,7 +651,7 @@ $parameters = array(
 );
 
 $comparison = array(
-    "Title" => array("sk" => "Parametre", "en" => "Parameters"),
+    "Title" => array("sk" => "Porovnania", "en" => "Comparison"),
     "Phone" => array("sk" => "Telefón", "en" => "Phone"),
     "Yes" => array("sk" => "Áno", "en" => "Yes"),
     "No" => array("sk" => "Nie", "en" => "No"),

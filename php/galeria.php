@@ -18,9 +18,14 @@
     <img src="images/icons/right.png" alt="<?php echo $alt["Next"][$lang]; ?>" id="photosNextBtnImg" class="controlBtn">
 </div>
 <?php
+
+    // Fotky sa dynamicky načítajú z priečinka "images/fotky" a spracujú sa v JS galeria.js aby
+    // som docielil plynulé prechody medzi obrázkami
+
     $cesta = 'images/fotky';
     $fotky = array_diff(scandir($cesta), array('.', '..'));
 
+    // Vytvaranie a naplnenie JS pola v PHP
     echo "<script>";
     echo "let images = [";
     foreach($fotky as $index => $fotka){
